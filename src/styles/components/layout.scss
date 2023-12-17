@@ -1,0 +1,52 @@
+// Stylowanie nagłówka
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 1rem;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Stylowanie stopki
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+// Stylowanie głównego kontenera
+main {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
