@@ -40,10 +40,20 @@ const PostForm = ({ post, onSave }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      
       <label>
-        Zdjęcie:
-        <input type="file" onChange={(e) => setImage(e.target.files[0])} />
+        Tytuł:
+        <input
+          type="text"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+      </label>
+      <label>
+        Treść:
+        <textarea
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+        />
       </label>
       <button type="submit">Zapisz</button>
     </form>
